@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Cá Nhân - Nguyễn Thế Thọ</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#0f766e,#2563eb);
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.1rem;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav ul li a{
+    display:block;
+    padding:15px 20px;
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+}
+
+nav ul li a:hover{
+    color:#2563eb;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:60px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#2563eb;
+    font-size:2rem;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:250px 1fr;
+    gap:30px;
+    align-items:center;
+}
+
+.avatar{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    background:#ddd;
+    overflow:hidden;
+    margin:auto;
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.info-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card-image{
+    height:250px;
+    overflow:hidden;
+    background:#e5e7eb;
+}
+
+.card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.summary{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+.highlight{
+    color:#2563eb;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.about{
+    grid-template-columns:1fr;
+}
+
+header h1{
+    font-size:2rem;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Nguyễn Thế Thọ</h1>
+    <p>MSSV: 25020844 | Kỹ thuật Máy tính</p>
+    <p>Trường Đại học Công nghệ</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="#gioithieu">Giới thiệu</a></li>
+<li><a href="#duan">Dự án</a></li>
+<li><a href="#tongket">Tổng kết</a></li>
+</ul>
+</nav>
+
+<section id="gioithieu">
+<div class="container">
+
+<h2 class="section-title">Giới Thiệu</h2>
+
+<div class="about">
+
+<div class="avatar">
+    <img src="assets/avatar.jpg"
+    onerror="this.style.display='none'">
+</div>
+
+<div class="info-card">
+
+<p><strong>Họ tên:</strong> Nguyễn Thế Thọ</p>
+
+<p><strong>MSSV:</strong> 25020844</p>
+
+<p><strong>Ngành học:</strong> Kỹ thuật Máy tính</p>
+
+<p><strong>Trường:</strong> Đại học Công nghệ</p>
+
+<br>
+
+<p>
+Mục tiêu học tập của tôi là
+<span class="highlight">
+hiểu biết nhiều hơn về công nghệ máy tính,
+nâng cao kỹ năng sử dụng công nghệ số
+và ứng dụng hiệu quả các công cụ hiện đại
+trong học tập cũng như công việc.
+</span>
+</p>
+
+<br>
+
+<p>
+Định hướng nghề nghiệp trong tương lai là trở thành
+<span class="highlight">
+kỹ thuật viên điện tử
+</span>,
+có khả năng vận hành, sửa chữa và hỗ trợ các hệ thống điện tử, máy tính và thiết bị công nghệ.
+</p>
+
+<br>
+
+<p>
+Portfolio này được xây dựng nhằm lưu trữ các sản phẩm học tập, minh chứng cho quá trình rèn luyện kỹ năng số và thể hiện kết quả đạt được trong học phần.
+</p>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="duan">
+
+<div class="container">
+
+<h2 class="section-title">Trang Dự Án</h2>
+
+<div class="projects">
+
+<div class="card">
+<div class="card-image">
+	<img src="assets/bai1.png"
+    onerror="this.style.display='none'">
+</div>
+
+<div class="card-content">
+
+<h3>Bài 1 - Quản lý tệp và thư mục</h3>
+
+<p>
+Cấu trúc thư mục được tổ chức theo mô hình:
+Năm học → Học kỳ → Môn học → Thành phần.
+</p>
+
+<p>
+Quy tắc đặt tên thống nhất:
+Không dấu, dùng dấu gạch dưới và đánh số phiên bản.
+</p>
+
+<p>
+Ví dụ:
+NMCNS_BaiTapCaNhan_V1.0.pdf
+</p>
+
+</div>
+</div>
+
+<div class="card">
+
+<div class="card-image">
+	<img src="assets/bai2.png"
+    onerror="this.style.display='none'">
+</div>
+
+<div class="card-content">
+
+<h3>Bài 2 - Tìm kiếm và đánh giá thông tin</h3>
+
+<p>
+Áp dụng các toán tử tìm kiếm nâng cao:
+</p>
+
+<p>
+site:edu.vn filetype:pdf
+"trí tuệ nhân tạo"
+intitle:giáo trình
+</p>
+
+<p>
+Nguồn tài liệu được đánh giá dựa trên độ tin cậy,
+tác giả, thời gian cập nhật và tính học thuật.
+</p>
+
+</div>
+</div>
+
+<div class="card">
+
+<div class="card-image">
+	<img src="assets/bai3.png"
+    onerror="this.style.display='none'">
+</div>
+
+<div class="card-content">
+
+<h3>Bài 3 - Viết Prompt hiệu quả</h3>
+
+<p>
+Prompt ban đầu:
+"Viết bài luận về AI trong giáo dục"
+</p>
+
+<br>
+
+<p>
+Prompt cải tiến:
+</p>
+
+<p>
+"Bạn là một chuyên gia công nghệ giáo dục.
+Hãy lập dàn ý chi tiết cho bài luận 1000 từ về tác động của AI đến sinh viên đại học tại Việt Nam năm 2026..."
+</p>
+
+<p>
+Kết quả thu được chi tiết, có cấu trúc và sát yêu cầu hơn.
+</p>
+
+</div>
+</div>
+
+<div class="card">
+
+<div class="card-image">
+	<img src="assets/bai4.png"
+    onerror="this.style.display='none'">
+</div>
+
+<div class="card-content">
+
+<h3>Bài 4 - Hợp tác trực tuyến</h3>
+
+<p>
+Sử dụng công cụ quản lý công việc trực tuyến
+để phân chia nhiệm vụ, theo dõi tiến độ
+và phối hợp làm việc nhóm.
+</p>
+
+<p>
+Các nhiệm vụ được gán người thực hiện,
+deadline và trạng thái hoàn thành rõ ràng.
+</p>
+
+</div>
+</div>
+
+<div class="card">
+
+<div class="card-image">
+	<img src="assets/bai5.png"
+    onerror="this.style.display='none'">
+</div>
+
+<div class="card-content">
+
+<h3>Bài 5 - Sáng tạo nội dung với AI</h3>
+
+<p>
+Ý tưởng được xây dựng bởi cá nhân,
+AI hỗ trợ gợi ý tiêu đề và cấu trúc nội dung.
+</p>
+
+<p>
+Người học đóng vai trò kiểm duyệt,
+biên tập và hoàn thiện sản phẩm cuối cùng.
+</p>
+
+</div>
+</div>
+
+<div class="card">
+
+<div class="card-image">
+	<img src="assets/bai6.png"
+    onerror="this.style.display='none'">
+</div>
+
+<div class="card-content">
+
+<h3>Bài 6 - AI có trách nhiệm</h3>
+
+<ul>
+<li>Kiểm tra chéo thông tin AI cung cấp.</li>
+<li>Không sao chép nguyên văn nội dung AI.</li>
+<li>Minh bạch khi sử dụng AI hỗ trợ.</li>
+<li>Tôn trọng liêm chính học thuật.</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="tongket">
+
+<div class="container">
+
+<h2 class="section-title">Tổng Kết</h2>
+
+<div class="summary">
+
+<p>
+Thông qua quá trình thực hiện Portfolio,
+tôi đã hiểu rõ hơn về các kỹ năng số,
+cách tìm kiếm thông tin học thuật,
+sử dụng trí tuệ nhân tạo hiệu quả và có trách nhiệm.
+</p>
+
+<br>
+
+<p>
+Điều tôi học được nhiều nhất là khả năng ứng dụng AI trong học tập,
+tổ chức dữ liệu khoa học và làm việc nhóm trong môi trường số.
+</p>
+
+<br>
+
+<p>
+Khó khăn lớn nhất là lựa chọn nguồn thông tin đáng tin cậy
+và tối ưu cách sử dụng AI để hỗ trợ học tập.
+</p>
+
+<br>
+
+<p>
+Portfolio là cơ hội giúp tôi tổng hợp kiến thức,
+đánh giá quá trình học tập và phát triển kỹ năng bản thân.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>Portfolio cá nhân - Nguyễn Thế Thọ</p>
+
+<p>Ngành Kỹ thuật Máy tính | Đại học Công nghệ</p>
+
+</footer>
+
+</body>
+</html>
